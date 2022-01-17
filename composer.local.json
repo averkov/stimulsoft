@@ -1,0 +1,40 @@
+{
+  "name": "drvas/stimulsoft",
+  "type": "library",
+  "description": "Компонент для работы с отчётами Stimulsoft",
+  "license": "MIT",
+  "require": {
+    "drvas/enum": "dev-develop",
+    "ramsey/uuid": "~3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "DRVAS\\Stimulsoft\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "secure-http": false
+  },
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "packagist": false
+    },
+    {
+      "type": "path",
+      "url": "../enum"
+    }
+  ]
+}
